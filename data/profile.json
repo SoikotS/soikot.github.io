@@ -1,0 +1,44 @@
+{
+  "name": "Soikot Sarkar",
+  "title": "Researcher in Photonics, Nanophotonics & Energy",
+  "short_intro": "Electrical and electronic engineering researcher working on photonics, nanophotonics, silicon photonics, metasurfaces, electromagnetic simulation, and photovoltaic technologies.",
+  "about": "I am an electrical and electronic engineering researcher interested in photonics, nanophotonics, optoelectronic devices, and energy technologies. My work focuses on computational modeling and design of nanoscale optical structures, with interests spanning dielectric metasurfaces, silicon photonics, and photovoltaic devices.",
+  "photo": "assets/profile.jpg",
+  "scholar": {
+    "publications": 2,
+    "citations": 0,
+    "h_index": 0
+  },
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yourusername"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/yourusername/"
+    },
+    {
+      "name": "ORCID",
+      "url": "https://orcid.org/0000-0000-0000-0000"
+    },
+    {
+      "name": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Your-Name"
+    }
+  ],
+  "education": [
+    {
+      "period": "2025",
+      "degree": "MSc in Electronics & Photonics",
+      "institution": "Bangladesh University of Engineering and Technology",
+      "result": "CGPA: 3.67 / 4.00"
+    },
+    {
+      "period": "2022",
+      "degree": "BSc in Electrical & Electronic Engineering",
+      "institution": "Shahjalal University of Science and Technology",
+      "result": "CGPA: 3.71 / 4.00"
+    }
+  ]
+}
