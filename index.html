@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jordan Ahmed — PhD Candidate, Computer Science</title>
+<meta name="description" content="Personal academic site of Jordan Ahmed: research, publications, academic projects, and profile." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">catalog<span class="dot">.</span>001</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home">Home</a></li>
+      <li><a href="research.html" data-page="research">Research</a></li>
+      <li><a href="publications.html" data-page="publications">Publications</a></li>
+      <li><a href="projects.html" data-page="projects">Projects</a></li>
+      <li><a href="profile.html" data-page="profile">Profile</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="theme-toggle" aria-label="Toggle dark mode">☽</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Card 001 — Home</span>
+        <h1 id="hero-name">Loading…</h1>
+        <p class="role" id="hero-role"></p>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="link-row" id="hero-links"></div>
+      </div>
+      <div class="portrait-card">
+        <span class="tab">FIG. 1</span>
+        <img id="hero-photo" src="assets/profile.jpg" alt="Portrait photo" onerror="this.closest('.portrait-card').style.display='none'" />
+      </div>
+    </div>
+  </header>
+
+  <section class="block reveal" id="scholar">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Google Scholar</h2>
+        <div style="display:flex; align-items:center; gap:0.9rem;">
+          <span class="section-index" id="scholar-updated"></span>
+          <button class="edit-stats-btn" id="edit-stats-btn" type="button">Edit stats</button>
+        </div>
+      </div>
+      <div class="ledger" id="ledger">
+        <div class="ledger-cell"><span class="ledger-num">—</span><span class="ledger-label">Citations</span></div>
+        <div class="ledger-cell"><span class="ledger-num">—</span><span class="ledger-label">h-index</span></div>
+        <div class="ledger-cell"><span class="ledger-num">—</span><span class="ledger-label">Publications</span></div>
+      </div>
+      <div class="ledger-meta">
+        <span id="scholar-note">Loading Scholar snapshot…</span>
+        <a id="scholar-link" href="#" target="_blank" rel="noopener">View full profile on Google Scholar →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="stats-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="stats-modal-title">
+      <div class="modal-head">
+        <h3 id="stats-modal-title">Update Scholar stats</h3>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Close">×</button>
+      </div>
+      <p class="modal-hint">
+        Edit your numbers below. <strong>Save &amp; preview</strong> updates this browser only, so
+        you can see the change right away. To make it permanent for everyone, copy the JSON and
+        paste it into <code>data/scholar_data.json</code>, then push to GitHub.
+      </p>
+      <form id="stats-form">
+        <label class="field">
+          <span>Citations</span>
+          <input type="number" id="input-citations" min="0" required />
+        </label>
+        <label class="field">
+          <span>h-index</span>
+          <input type="number" id="input-hindex" min="0" required />
+        </label>
+        <label class="field">
+          <span>Publications</span>
+          <input type="number" id="input-publications" min="0" required />
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="pill primary">Save &amp; preview</button>
+          <button type="button" class="pill" id="copy-json-btn">Copy JSON</button>
+          <button type="button" class="pill" id="reset-stats-btn">Reset to file data</button>
+        </div>
+        <p class="modal-copied" id="copy-confirm" hidden>Copied — paste into data/scholar_data.json</p>
+      </form>
+    </div>
+  </div>
+
+  <section class="block reveal" id="news">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Recent updates</h2>
+        <span class="section-index">Log</span>
+      </div>
+      <div class="timeline" id="news-list"></div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="recent-pubs">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Recent publications</h2>
+        <span class="section-index"><a href="publications.html" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--garnet);">View all →</a></span>
+      </div>
+      <div class="catalog two-col" id="recent-pubs-list"></div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="recent-projects" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Featured projects</h2>
+        <span class="section-index"><a href="projects.html" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--garnet);">View all →</a></span>
+      </div>
+      <div class="catalog two-col" id="recent-projects-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span id="footer-name">© 2026</span>
+    <span>Built with a static card catalog, hosted on GitHub Pages.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
