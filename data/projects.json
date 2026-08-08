@@ -1,0 +1,23 @@
+[
+  {
+    "short": "FDTD",
+    "category": "PHOTONICS",
+    "title": "Nanophotonic Structure Design",
+    "description": "Electromagnetic simulation and optimization of nanoscale optical structures.",
+    "link": "#"
+  },
+  {
+    "short": "Si",
+    "category": "SILICON PHOTONICS",
+    "title": "Integrated Photonic Devices",
+    "description": "Waveguide design, mode analysis, polarization manipulation and photonic device concepts.",
+    "link": "#"
+  },
+  {
+    "short": "PV",
+    "category": "SOLAR ENERGY",
+    "title": "Nanostructure-Enhanced Solar Cell",
+    "description": "Optical engineering of hybrid nanostructures for improved photovoltaic performance.",
+    "link": "#"
+  }
+]
