@@ -5,9 +5,9 @@
   "about": "I am an electrical and electronic engineering researcher interested in photonics, nanophotonics, optoelectronic devices, and energy technologies. My work focuses on computational modeling and design of nanoscale optical structures, with interests spanning dielectric metasurfaces, silicon photonics, and photovoltaic devices.",
   "photo": "assets/profile.jpeg",
   "scholar": {
-    "publications": 2,
-    "citations": 0,
-    "h_index": 0
+    "publications": 5,
+    "citations": 19,
+    "h_index": 3
   },
   "socials": [
     {
