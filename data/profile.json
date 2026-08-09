@@ -39,7 +39,7 @@
       "courses": "Nanophotonics and Plasmonics | Solar Cells | Laser Theory | Semiconductor Characterization Technology | Carbon Nanotechnology | Optical Waveguide Theory"
     },
     {
-      "period": "2025",
+      "period": "2022",
       "degree": "B.Sc. in Electrical & Electronic Engineering",
       "institution": "Shahjalal University of Science and Technology",
       "major": "Electronics",
@@ -49,14 +49,12 @@
       "courses": "Solid State Devices | Optoelectronics | Electromagnetic Fields and Waves | Electrical Properties of Materials | Optical Fiber Communication | Processing and Fabrication Technology | Electronics"
     },
 	{
-      "period": "2025",
-      "degree": "B.Sc. in Electrical & Electronic Engineering",
+      "period": "2022",
+      "degree": "Second Major in Computer Science & Engineering",
       "institution": "Shahjalal University of Science and Technology",
-      "major": "Electronics",
-      "thesis": "Gallium Phosphide Photonic Crystal-Based Nanocavity Laser",
-      "pi": "Dr. Md. Asaduz Zaman Mamun & Md. Ishfak Tahmid ",
-      "result": "CGPA: 3.71 / 4.00",
-      "courses": "Solid State Devices | Optoelectronics | Electromagnetic Fields and Waves | Electrical Properties of Materials | Optical Fiber Communication | Processing and Fabrication Technology | Electronics"
+      "thesis": "Comparative Performance Analysis of Baseline Model and Deep Learning Model for Bengali News Categorization",
+      "pi": "Mr. Moqsadur Rahman",
+      "courses": "Object-Oriented Programming | Software Engineering | Web Engineering | Networking | Data Structure | Algorithm"
     }
   ],
   "professional_experience": [
@@ -72,7 +70,7 @@
     },
     {
       "title": "Research Student",
-      "organization": "QPACER Research Group, BUET",
+      "organization": "SAJID Lab, BUET",
       "period": "July 2022 – Present"
     },
     {
