@@ -4,6 +4,7 @@
     "category": "PHOTONICS",
     "title": "Nanophotonic Structure Design",
     "description": "Electromagnetic simulation and optimization of nanoscale optical structures.",
+    "image": "assets/projects/project1.jpg",
     "link": "#"
   },
   {
@@ -11,6 +12,7 @@
     "category": "SILICON PHOTONICS",
     "title": "Integrated Photonic Devices",
     "description": "Waveguide design, mode analysis, polarization manipulation and photonic device concepts.",
+    "image": "assets/projects/project2.jpg",
     "link": "#"
   },
   {
@@ -18,6 +20,7 @@
     "category": "SOLAR ENERGY",
     "title": "Nanostructure-Enhanced Solar Cell",
     "description": "Optical engineering of hybrid nanostructures for improved photovoltaic performance.",
+    "image": "assets/projects/project3.jpg",
     "link": "#"
   }
 ]

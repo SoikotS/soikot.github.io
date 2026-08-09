@@ -29,20 +29,96 @@
   ],
   "education": [
     {
-    "period": "2025",
-    "degree": "MSc in Electrical & Electronic Engineering",
-    "institution": "Bangladesh University of Engineering and Technology",
-    "major": "Electronics and Photonics",
-    "thesis": "Hybrid Metal-Dielectric Nanostructures Integrated Heterojunction Thin Film Solar Cell for Efficiency Enhancement",
-    "pi": "Dr. Sajid Muhaimin Choudhury",
-    "result": "CGPA: 3.67 / 4.00",
-    "courses": "Nanophotonics and Plasmonics | Solar Cells | Laser Theory | Semiconductor Characterization Technology | Carbon Nanotechnology | Optical Waveguide Theory"
-	},
+      "period": "2025",
+      "degree": "MSc in Electrical & Electronic Engineering",
+      "institution": "Bangladesh University of Engineering and Technology",
+      "major": "Electronics and Photonics",
+      "thesis": "Hybrid Metal-Dielectric Nanostructures Integrated Heterojunction Thin Film Solar Cell for Efficiency Enhancement",
+      "pi": "Dr. Sajid Muhaimin Choudhury",
+      "result": "CGPA: 3.67 / 4.00",
+      "courses": "Nanophotonics and Plasmonics | Solar Cells | Laser Theory | Semiconductor Characterization Technology | Carbon Nanotechnology | Optical Waveguide Theory"
+    },
     {
       "period": "2022",
       "degree": "BSc in Electrical & Electronic Engineering",
       "institution": "Shahjalal University of Science and Technology",
       "result": "CGPA: 3.71 / 4.00"
     }
+  ],
+  "professional_experience": [
+    {
+      "title": "Exam Coordinator",
+      "organization": "Dept. of EEE, Sonargaon University",
+      "period": "August 2025 – Present"
+    },
+    {
+      "title": "Lecturer",
+      "organization": "Dept. of EEE, Sonargaon University",
+      "period": "June 2024 – Present"
+    },
+    {
+      "title": "Research Student",
+      "organization": "QPACER Research Group, BUET",
+      "period": "July 2022 – Present"
+    },
+    {
+      "title": "Research Student",
+      "organization": "Nanoscale Simulation, Characterization, and Fabrication Lab",
+      "period": "August 2023 – Present"
+    },
+    {
+      "title": "Teaching Assistant",
+      "organization": "Dept. of EEE, BUET",
+      "period": "October 2022 – April 2023"
+    },
+    {
+      "title": "Undergraduate Research Student",
+      "organization": "Dept. of EEE, SUST",
+      "period": "February 2019 – February 2020"
+    },
+    {
+      "title": "Trainee",
+      "organization": "Training Institute for Chemical Industries (TICI)",
+      "period": "21 days"
+    }
+  ],
+  "conferences_workshops": [
+    "Presented paper at 5th International Conference on Telecommunications and Photonics (ICTP), 2023",
+    "Presented paper at IEEE Region 10 Symposium (TENSYMP), 2020",
+    "Workshop on IRIS.AI software, organized by BUET Central Library, 2024",
+    "Participated in the Online Optics & Photonics Course, instructed by Dr. Mahdy Rahman Choudhury, Professor, NSU, 2021",
+    "Attended an Online Quantum Mechanics Course, instructed by Dr. Mahdy Rahman Choudhury, Professor, NSU, 2021",
+    "Technical Talk on Spintronic & Spin-optoelectronic Devices for Next Generation Electronics, organized by IEEE SUST Student Branch, 2019",
+    "Seminar on Introduction to Nanofabrication Technology, organized by IEEE SUST Student Branch, 2018",
+    "Workshop on LaTeX, organized by IEEE SUST Students Branch, 2017"
+  ],
+  "software_skills": [
+    {
+      "category": "Programming Languages",
+      "items": "C/C++, Python, Bash, 8086 Assembly Language, Java"
+    },
+    {
+      "category": "Numerical Analysis",
+      "items": "Lumerical (FDTD, CHARGE, HEAT, MODE), MATLAB, MEEP, COMSOL"
+    },
+    {
+      "category": "Simulation & Design Tools",
+      "items": "Cadence (OrCAD, Virtuoso), AutoCAD, PowerWorld, Microwind"
+    },
+    {
+      "category": "Document Preparation & Illustrations",
+      "items": "Origin, LaTeX, Microsoft Office, Adobe Illustrator, Adobe Photoshop, Blender, Paraview"
+    }
+  ],
+  "activities": [
+    "Former Junior Publication Secretary: IEEE Student Branch SUST",
+    "Former General Member: Qizen SUST",
+    "Former Cricketer: SUST EEE Cricket Team",
+    "Former General Member: SUST EEE Society"
+  ],
+  "achievements": [
+    "4th position in Electronics Olympiad (EEE Festival 2018, SUST)",
+    "Junior School Scholarship by the Ministry of Education, Bangladesh, 2011",
+    "Runners Up in Shahid Smrity Hall Cricket Tournament, BUET, 2024"
   ]
 }
