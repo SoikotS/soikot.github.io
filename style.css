@@ -661,16 +661,48 @@ nav a.active:after {
 
 .publication {
     display: grid;
-    grid-template-columns: 75px 1fr;
-    gap: 25px;
-    padding: 27px 0;
+    grid-template-columns: 75px 120px minmax(0, 1fr);
+    gap: 22px;
+    padding: 30px 0;
     border-top: 1px solid var(--line);
+    align-items: start;
 }
 
 .publication-year {
     color: var(--primary);
     font-size: 12px;
     font-weight: 850;
+    padding-top: 3px;
+}
+
+.publication-cover-wrap {
+    width: 120px;
+}
+
+.publication-cover {
+    width: 120px;
+    height: 165px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--primary-soft);
+    box-shadow: 0 6px 18px rgba(13, 79, 99, .10);
+    transition: .25s ease;
+}
+
+.publication-cover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(13, 79, 99, .14);
+}
+
+.publication-content {
+    min-width: 0;
+}
+
+.publication-content h3 {
+    margin-top: 0;
 }
 
 
@@ -865,10 +897,28 @@ footer {
         gap: 6px;
     }
 
-    .featured,
-    .publication {
+    .featured {
         grid-template-columns: 1fr;
         gap: 5px;
+    }
+
+    .publication {
+        grid-template-columns: 55px 90px minmax(0, 1fr);
+        gap: 12px;
+        padding: 24px 0;
+    }
+
+    .publication-cover-wrap,
+    .publication-cover {
+        width: 90px;
+    }
+
+    .publication-cover {
+        height: 125px;
+    }
+
+    .publication-year {
+        padding-top: 2px;
     }
 
     .featured > div:first-child {
