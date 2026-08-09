@@ -29,11 +29,15 @@
   ],
   "education": [
     {
-      "period": "2025",
-      "degree": "MSc in Electrical & Electronic Engineering",
-      "institution": "Bangladesh University of Engineering and Technology",
-      "result": "CGPA: 3.67 / 4.00"
-    },
+    "period": "2025",
+    "degree": "MSc in Electrical & Electronic Engineering",
+    "institution": "Bangladesh University of Engineering and Technology",
+    "major": "Electronics and Photonics",
+    "thesis": "Hybrid Metal-Dielectric Nanostructures Integrated Heterojunction Thin Film Solar Cell for Efficiency Enhancement",
+    "pi": "Dr. Sajid Muhaimin Choudhury",
+    "result": "CGPA: 3.67 / 4.00",
+    "courses": "Nanophotonics and Plasmonics | Solar Cells | Laser Theory | Semiconductor Characterization Technology | Carbon Nanotechnology | Optical Waveguide Theory"
+	},
     {
       "period": "2022",
       "degree": "BSc in Electrical & Electronic Engineering",

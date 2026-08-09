@@ -514,29 +514,59 @@ async function renderPage() {
             ) {
 
                 educationList.innerHTML =
-                    p.education
-                        .map(x => `
-                            <div class="card">
+    p.education
+        .map(x => `
+            <div class="card education-card">
 
-                                <span class="meta">
-                                    ${x.period ?? ""}
-                                </span>
+                <span class="meta">
+                    ${x.period ?? ""}
+                </span>
 
-                                <h3>
-                                    ${x.degree ?? ""}
-                                </h3>
+                <h3>
+                    ${x.degree ?? ""}
+                </h3>
 
-                                <p>
-                                    ${x.institution ?? ""}
-                                </p>
+                <p class="education-institution">
+                    ${x.institution ?? ""}
+                </p>
 
-                                <strong>
-                                    ${x.result ?? ""}
-                                </strong>
+                ${x.major ? `
+                    <p class="education-detail">
+                        <strong>Major:</strong>
+                        ${x.major}
+                    </p>
+                ` : ""}
 
-                            </div>
-                        `)
-                        .join("");
+                ${x.thesis ? `
+                    <p class="education-detail">
+                        <strong>Thesis Title:</strong>
+                        <u>${x.thesis}</u>
+                    </p>
+                ` : ""}
+
+                ${x.pi ? `
+                    <p class="education-detail">
+                        <strong>PI:</strong>
+                        <strong>${x.pi}</strong>
+                    </p>
+                ` : ""}
+
+                ${x.result ? `
+                    <p class="education-detail">
+                        ${x.result}
+                    </p>
+                ` : ""}
+
+                ${x.courses ? `
+                    <p class="education-detail">
+                        <strong>Courses:</strong>
+                        ${x.courses}
+                    </p>
+                ` : ""}
+
+            </div>
+        `)
+        .join("");
 
             } else {
 

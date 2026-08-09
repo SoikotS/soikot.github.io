@@ -3,11 +3,14 @@
     --primary-dark: #0D4F63;
     --primary-light: #E7F4F7;
     --primary-soft: #F3FAFB;
+
     --text: #16323C;
     --muted: #647980;
     --line: #D8E7EA;
+
     --white: #fff;
     --bg: #F6FAFB;
+
     --shadow: 0 14px 40px rgba(13, 79, 99, .10);
 }
 
@@ -52,13 +55,16 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
+
     background: rgba(255, 255, 255, .90);
     border-bottom: 1px solid var(--line);
+
     backdrop-filter: blur(16px);
 }
 
 .nav-container {
     min-height: 68px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,21 +85,27 @@ nav {
 
 nav a {
     position: relative;
+
     color: var(--muted);
     font-size: 13px;
     font-weight: 650;
+
     padding: 24px 0 20px;
 }
 
 nav a:after {
     content: "";
+
     position: absolute;
     left: 0;
     bottom: 14px;
+
     width: 0;
     height: 2px;
+
     border-radius: 3px;
     background: var(--primary);
+
     transition: .25s;
 }
 
@@ -115,6 +127,7 @@ nav a.active:after {
 .compact-hero {
     position: relative;
     overflow: hidden;
+
     padding: 30px 0 35px;
 
     background:
@@ -140,7 +153,12 @@ nav a.active:after {
     z-index: 1;
 
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr) 290px;
+
+    grid-template-columns:
+        220px
+        minmax(0, 1fr)
+        290px;
+
     gap: 45px;
 
     align-items: center;
@@ -167,8 +185,10 @@ nav a.active:after {
 .hero-intro .label,
 .section-label {
     color: var(--primary);
+
     font-size: 10px;
     font-weight: 850;
+
     letter-spacing: 2px;
 }
 
@@ -257,6 +277,7 @@ nav a.active:after {
 
     border: 1px solid #C9DDE2;
     border-top: 4px solid var(--primary);
+
     border-radius: 14px;
 
     background: rgba(255, 255, 255, .94);
@@ -310,6 +331,7 @@ nav a.active:after {
 
 .metrics-socials .socials {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 8px;
@@ -482,6 +504,7 @@ nav a.active:after {
 
 /* =========================================================
    Featured Publication - Home
+   Year → Cover → Information
    ========================================================= */
 
 .featured-section {
@@ -493,7 +516,10 @@ nav a.active:after {
 .featured {
     display: grid;
 
-    grid-template-columns: 65px 100px minmax(0, 1fr);
+    grid-template-columns:
+        65px
+        100px
+        minmax(0, 1fr);
 
     gap: 22px;
 
@@ -708,10 +734,21 @@ nav a.active:after {
 .card p,
 .update p,
 #profile-about,
+#about-text,
 .hero-desc,
 .item p,
 .project-body p {
     white-space: pre-line;
+}
+
+
+/* =========================================================
+   Justified Text
+   ========================================================= */
+
+#profile-about,
+#about-text {
+    text-align: justify;
 }
 
 
@@ -764,6 +801,162 @@ nav a.active:after {
     border-radius: 10px;
 
     background: #fff;
+}
+
+
+/* =========================================================
+   EDUCATION CARDS
+   ========================================================= */
+
+.education-card {
+    padding: 27px;
+
+    height: 100%;
+
+    background: #fff;
+
+    border: 1px solid var(--line);
+    border-radius: 10px;
+
+    transition: .25s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #BBD7DE;
+
+    box-shadow:
+        0 12px 28px rgba(13, 79, 99, .08);
+}
+
+
+/* Degree */
+
+.education-card h3 {
+    margin: 8px 0 5px;
+
+    color: var(--primary-dark);
+
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+
+/* Institution */
+
+.education-institution {
+    margin-bottom: 16px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+
+/* Major, Thesis, PI, Courses */
+
+.education-detail {
+    margin-top: 8px;
+
+    color: var(--text);
+
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* Labels */
+
+.education-detail strong {
+    color: var(--text);
+
+    font-weight: 700;
+}
+
+
+/* Thesis */
+
+.education-detail u {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+
+/* Courses */
+
+.education-courses {
+    margin-top: 10px;
+
+    text-align: justify;
+}
+
+
+/* Result / CGPA */
+
+.education-result {
+    margin-top: 8px;
+
+    color: var(--primary-dark);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   Profile Information
+   ========================================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        minmax(260px, 1fr);
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 2px solid var(--primary);
+}
+
+.info {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.info span {
+    color: var(--muted);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info strong {
+    color: var(--text);
+
+    font-size: 13px;
+
+    text-align: right;
 }
 
 
@@ -844,7 +1037,10 @@ nav a.active:after {
 .publication {
     display: grid;
 
-    grid-template-columns: 75px 120px minmax(0, 1fr);
+    grid-template-columns:
+        75px
+        120px
+        minmax(0, 1fr);
 
     gap: 22px;
 
@@ -893,6 +1089,10 @@ nav a.active:after {
 
     box-shadow:
         0 12px 25px rgba(13, 79, 99, .14);
+}
+
+.publication-cover-empty {
+    min-height: 165px;
 }
 
 .publication-content {
@@ -1046,7 +1246,9 @@ footer {
 @media (max-width: 1100px) {
 
     .compact-grid {
-        grid-template-columns: 190px minmax(0, 1fr);
+        grid-template-columns:
+            190px
+            minmax(0, 1fr);
 
         gap: 36px;
     }
@@ -1104,6 +1306,24 @@ footer {
 
         gap: 3px;
     }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .education-card {
+        padding: 24px;
+    }
+
+    .education-card h3 {
+        font-size: 19px;
+    }
+
+    .education-detail {
+        font-size: 13px;
+    }
 }
 
 
@@ -1146,7 +1366,10 @@ footer {
     /* Featured Publication */
 
     .featured {
-        grid-template-columns: 55px 85px minmax(0, 1fr);
+        grid-template-columns:
+            55px
+            85px
+            minmax(0, 1fr);
 
         gap: 12px;
 
@@ -1166,7 +1389,10 @@ footer {
     /* Publications */
 
     .publication {
-        grid-template-columns: 55px 90px minmax(0, 1fr);
+        grid-template-columns:
+            55px
+            90px
+            minmax(0, 1fr);
 
         gap: 12px;
 
@@ -1182,8 +1408,42 @@ footer {
         height: 125px;
     }
 
+    .publication-cover-empty {
+        min-height: 125px;
+    }
+
     .publication-year {
         padding-top: 2px;
+    }
+
+
+    /* Education */
+
+    .education-card {
+        padding: 22px;
+    }
+
+    .education-card h3 {
+        font-size: 18px;
+    }
+
+    .education-detail,
+    .education-institution,
+    .education-result {
+        font-size: 12.5px;
+    }
+
+
+    /* Profile Information */
+
+    .info {
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .info strong {
+        text-align: left;
     }
 
 
