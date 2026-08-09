@@ -2,7 +2,7 @@ async function loadJSON(file) {
     const r = await fetch(file);
 
     if (!r.ok) {
-        throw new Error(file);
+        throw new Error(`Unable to load: ${file}`);
     }
 
     return r.json();
@@ -13,7 +13,7 @@ function setText(id, value) {
     const el = document.getElementById(id);
 
     if (el) {
-        el.textContent = value;
+        el.textContent = value ?? "";
     }
 }
 
@@ -32,12 +32,14 @@ async function renderHome() {
         ]);
 
 
-        /* Profile */
+        /* Profile information */
 
         setText("hero-name", p.name);
         setText("hero-title", p.title);
         setText("hero-description", p.short_intro);
 
+
+        /* Profile image */
 
         const img =
             document.getElementById("profile-image");
@@ -45,6 +47,10 @@ async function renderHome() {
         if (img) {
             img.loading = "eager";
             img.decoding = "async";
+
+            if (p.photo) {
+                img.src = p.photo;
+            }
         }
 
 
@@ -53,30 +59,33 @@ async function renderHome() {
         setText("about-text", p.about);
 
 
-        /* Research Metrics */
+        /* Research metrics */
 
-        setText(
-            "stat-publications",
-            p.scholar.publications
-        );
+        if (p.scholar) {
 
-        setText(
-            "stat-citations",
-            p.scholar.citations
-        );
+            setText(
+                "stat-publications",
+                p.scholar.publications
+            );
 
-        setText(
-            "stat-hindex",
-            p.scholar.h_index
-        );
+            setText(
+                "stat-citations",
+                p.scholar.citations
+            );
+
+            setText(
+                "stat-hindex",
+                p.scholar.h_index
+            );
+        }
 
 
-        /* Social Links */
+        /* Social links */
 
         const socials =
             document.getElementById("social-links");
 
-        if (socials) {
+        if (socials && Array.isArray(p.socials)) {
 
             socials.innerHTML = p.socials
                 .map(x => `
@@ -92,19 +101,19 @@ async function renderHome() {
         }
 
 
-        /* Research Interests */
+        /* Research interests */
 
         const interests =
             document.getElementById("interest-grid");
 
-        if (interests) {
+        if (interests && Array.isArray(r.interests)) {
 
             interests.innerHTML = r.interests
                 .map((x, i) => `
                     <div class="card">
 
                         <span class="meta">
-                            0${i + 1}
+                            ${String(i + 1).padStart(2, "0")}
                         </span>
 
                         <h3>
@@ -136,54 +145,64 @@ async function renderHome() {
             fp.innerHTML = `
 
                 <div class="featured-year">
-                    ${r.featured.year}
+                    ${r.featured.year ?? ""}
                 </div>
-
 
                 <div class="featured-cover-wrap">
 
-                    <img
-                        class="featured-cover"
-                        src="${r.featured.image}"
-                        alt="Front page of ${r.featured.title}"
-                        loading="lazy">
+                    ${
+                        r.featured.image
+                            ? `
+                                <img
+                                    class="featured-cover"
+                                    src="${r.featured.image}"
+                                    alt="Front page of ${r.featured.title ?? "publication"}"
+                                    loading="lazy">
+                              `
+                            : ""
+                    }
 
                 </div>
-
 
                 <div class="featured-content">
 
                     <h3>
-                        ${r.featured.title}
+                        ${r.featured.title ?? ""}
                     </h3>
 
                     <p class="authors">
-                        ${r.featured.authors}
+                        ${r.featured.authors ?? ""}
                     </p>
 
                     <p class="journal">
-                        ${r.featured.journal}
+                        ${r.featured.journal ?? ""}
                     </p>
 
-                    <a
-                        class="link"
-                        href="${r.featured.link}"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        View publication →
-                    </a>
+                    ${
+                        r.featured.link
+                            ? `
+                                <a
+                                    class="link"
+                                    href="${r.featured.link}"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View publication →
+                                </a>
+                              `
+                            : ""
+                    }
 
                 </div>
             `;
         }
 
 
-        /* Recent Updates */
+        /* Recent updates */
 
         const up =
             document.getElementById("updates");
 
-        if (up) {
+        if (up && Array.isArray(u)) {
 
             up.innerHTML = u
                 .map(x => `
@@ -213,7 +232,7 @@ async function renderHome() {
 
     } catch (e) {
 
-        console.error(e);
+        console.error("Home page error:", e);
 
     }
 }
@@ -242,14 +261,15 @@ async function renderPage() {
                     "data/research.json"
                 );
 
-
             const researchList =
                 document.getElementById(
                     "research-list"
                 );
 
-
-            if (researchList) {
+            if (
+                researchList &&
+                Array.isArray(r.experience)
+            ) {
 
                 researchList.innerHTML =
                     r.experience
@@ -258,21 +278,21 @@ async function renderPage() {
                             <div class="item">
 
                                 <div class="item-date">
-                                    ${x.period}
+                                    ${x.period ?? ""}
                                 </div>
 
                                 <div>
 
                                     <h3>
-                                        ${x.title}
+                                        ${x.title ?? ""}
                                     </h3>
 
                                     <h4>
-                                        ${x.area}
+                                        ${x.area ?? ""}
                                     </h4>
 
                                     <p>
-                                        ${x.description}
+                                        ${x.description ?? ""}
                                     </p>
 
                                 </div>
@@ -297,14 +317,15 @@ async function renderPage() {
                     "data/publications.json"
                 );
 
-
             const publicationList =
                 document.getElementById(
                     "publication-list"
                 );
 
-
-            if (publicationList) {
+            if (
+                publicationList &&
+                Array.isArray(p)
+            ) {
 
                 publicationList.innerHTML =
                     p
@@ -315,7 +336,7 @@ async function renderPage() {
                                 <!-- Year -->
 
                                 <div class="publication-year">
-                                    ${x.year}
+                                    ${x.year ?? ""}
                                 </div>
 
 
@@ -323,11 +344,21 @@ async function renderPage() {
 
                                 <div class="publication-cover-wrap">
 
-                                    <img
-                                        class="publication-cover"
-                                        src="${x.image}"
-                                        alt="Front page of ${x.title}"
-                                        loading="lazy">
+                                    ${
+                                        x.image
+                                            ? `
+                                                <img
+                                                    class="publication-cover"
+                                                    src="${x.image}"
+                                                    alt="Front page of ${x.title ?? "publication"}"
+                                                    loading="lazy">
+                                              `
+                                            : `
+                                                <div
+                                                    class="publication-cover publication-cover-empty">
+                                                </div>
+                                              `
+                                    }
 
                                 </div>
 
@@ -337,24 +368,30 @@ async function renderPage() {
                                 <div class="publication-content">
 
                                     <h3>
-                                        ${x.title}
+                                        ${x.title ?? ""}
                                     </h3>
 
                                     <p class="authors">
-                                        ${x.authors}
+                                        ${x.authors ?? ""}
                                     </p>
 
                                     <p class="journal">
-                                        ${x.journal}
+                                        ${x.journal ?? ""}
                                     </p>
 
-                                    <a
-                                        class="link"
-                                        href="${x.link}"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        DOI / Article →
-                                    </a>
+                                    ${
+                                        x.link
+                                            ? `
+                                                <a
+                                                    class="link"
+                                                    href="${x.link}"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    DOI / Article →
+                                                </a>
+                                              `
+                                            : ""
+                                    }
 
                                 </div>
 
@@ -377,14 +414,15 @@ async function renderPage() {
                     "data/projects.json"
                 );
 
-
             const projectList =
                 document.getElementById(
                     "project-list"
                 );
 
-
-            if (projectList) {
+            if (
+                projectList &&
+                Array.isArray(p)
+            ) {
 
                 projectList.innerHTML =
                     p
@@ -393,30 +431,36 @@ async function renderPage() {
                             <div>
 
                                 <div class="project-top">
-                                    ${x.short}
+                                    ${x.short ?? ""}
                                 </div>
 
                                 <div class="project-body">
 
                                     <span class="meta">
-                                        ${x.category}
+                                        ${x.category ?? ""}
                                     </span>
 
                                     <h3>
-                                        ${x.title}
+                                        ${x.title ?? ""}
                                     </h3>
 
                                     <p>
-                                        ${x.description}
+                                        ${x.description ?? ""}
                                     </p>
 
-                                    <a
-                                        class="link"
-                                        href="${x.link}"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        Project details →
-                                    </a>
+                                    ${
+                                        x.link
+                                            ? `
+                                                <a
+                                                    class="link"
+                                                    href="${x.link}"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    Project details →
+                                                </a>
+                                              `
+                                            : ""
+                                    }
 
                                 </div>
 
@@ -440,11 +484,15 @@ async function renderPage() {
                 );
 
 
+            /* Profile name */
+
             setText(
                 "profile-name",
                 p.name
             );
 
+
+            /* Profile description */
 
             setText(
                 "profile-about",
@@ -452,47 +500,61 @@ async function renderPage() {
             );
 
 
+            /* Education */
+
             const educationList =
                 document.getElementById(
                     "education-list"
                 );
 
 
-            if (educationList) {
+            if (
+                educationList &&
+                Array.isArray(p.education)
+            ) {
 
                 educationList.innerHTML =
                     p.education
                         .map(x => `
-
                             <div class="card">
 
                                 <span class="meta">
-                                    ${x.period}
+                                    ${x.period ?? ""}
                                 </span>
 
                                 <h3>
-                                    ${x.degree}
+                                    ${x.degree ?? ""}
                                 </h3>
 
                                 <p>
-                                    ${x.institution}
+                                    ${x.institution ?? ""}
                                 </p>
 
                                 <strong>
-                                    ${x.result}
+                                    ${x.result ?? ""}
                                 </strong>
 
                             </div>
-
                         `)
                         .join("");
-            }
-        }
 
+            } else {
+
+                console.error(
+                    "Education data not found or is not an array.",
+                    p.education
+                );
+
+            }
+
+        }
 
     } catch (e) {
 
-        console.error(e);
+        console.error(
+            `Error rendering ${page} page:`,
+            e
+        );
 
     }
 }
@@ -506,7 +568,7 @@ document.addEventListener(
     "DOMContentLoaded",
     () => {
 
-        /* Current Year */
+        /* Current year */
 
         setText(
             "year",
@@ -514,7 +576,7 @@ document.addEventListener(
         );
 
 
-        /* Page Rendering */
+        /* Render page */
 
         if (
             document.body.dataset.page === "home"
@@ -529,7 +591,7 @@ document.addEventListener(
         }
 
 
-        /* Active Navigation */
+        /* Active navigation */
 
         const current =
             location.pathname.split("/").pop()
