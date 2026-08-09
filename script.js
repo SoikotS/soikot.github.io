@@ -24,24 +24,36 @@ function setText(id, value) {
 
 async function renderHome() {
     try {
+
         const [p, r, u] = await Promise.all([
             loadJSON("data/profile.json"),
             loadJSON("data/research.json"),
             loadJSON("data/updates.json")
         ]);
 
+
+        /* Profile */
+
         setText("hero-name", p.name);
         setText("hero-title", p.title);
         setText("hero-description", p.short_intro);
 
-        const img = document.getElementById("profile-image");
+
+        const img =
+            document.getElementById("profile-image");
 
         if (img) {
             img.loading = "eager";
             img.decoding = "async";
         }
 
+
+        /* About */
+
         setText("about-text", p.about);
+
+
+        /* Research Metrics */
 
         setText(
             "stat-publications",
@@ -61,16 +73,18 @@ async function renderHome() {
 
         /* Social Links */
 
-        const socials = document.getElementById("social-links");
+        const socials =
+            document.getElementById("social-links");
 
         if (socials) {
+
             socials.innerHTML = p.socials
                 .map(x => `
                     <a
                         class="social-btn"
                         href="${x.url}"
                         target="_blank"
-                        rel="noopener">
+                        rel="noopener noreferrer">
                         ${x.name}
                     </a>
                 `)
@@ -84,9 +98,11 @@ async function renderHome() {
             document.getElementById("interest-grid");
 
         if (interests) {
+
             interests.innerHTML = r.interests
                 .map((x, i) => `
                     <div class="card">
+
                         <span class="meta">
                             0${i + 1}
                         </span>
@@ -98,26 +114,45 @@ async function renderHome() {
                         <p>
                             ${x.description}
                         </p>
+
                     </div>
                 `)
                 .join("");
         }
 
 
-        /* Featured Publication */
+        /* =================================================
+           Featured Publication
+           Year → Image → Information
+           ================================================= */
 
         const fp =
             document.getElementById(
                 "featured-publication"
             );
 
-        if (fp) {
+        if (fp && r.featured) {
+
             fp.innerHTML = `
-                <div>
+
+                <div class="featured-year">
                     ${r.featured.year}
                 </div>
 
-                <div>
+
+                <div class="featured-cover-wrap">
+
+                    <img
+                        class="featured-cover"
+                        src="${r.featured.image}"
+                        alt="Front page of ${r.featured.title}"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="featured-content">
+
                     <h3>
                         ${r.featured.title}
                     </h3>
@@ -137,6 +172,7 @@ async function renderHome() {
                         rel="noopener noreferrer">
                         View publication →
                     </a>
+
                 </div>
             `;
         }
@@ -148,6 +184,7 @@ async function renderHome() {
             document.getElementById("updates");
 
         if (up) {
+
             up.innerHTML = u
                 .map(x => `
                     <div class="update">
@@ -157,6 +194,7 @@ async function renderHome() {
                         </div>
 
                         <div>
+
                             <h3>
                                 ${x.title}
                             </h3>
@@ -164,6 +202,7 @@ async function renderHome() {
                             <p>
                                 ${x.description}
                             </p>
+
                         </div>
 
                     </div>
@@ -171,8 +210,11 @@ async function renderHome() {
                 .join("");
         }
 
+
     } catch (e) {
+
         console.error(e);
+
     }
 }
 
@@ -186,50 +228,67 @@ async function renderPage() {
     const page =
         document.body.dataset.page;
 
+
     try {
 
-        /* -------------------------------------------------
+        /* =================================================
            Research Experience
-           ------------------------------------------------- */
+           ================================================= */
 
         if (page === "research") {
 
             const r =
-                await loadJSON("data/research.json");
+                await loadJSON(
+                    "data/research.json"
+                );
 
-            document.getElementById(
-                "research-list"
-            ).innerHTML = r.experience
-                .map(x => `
-                    <div class="item">
 
-                        <div class="item-date">
-                            ${x.period}
-                        </div>
+            const researchList =
+                document.getElementById(
+                    "research-list"
+                );
 
-                        <div>
-                            <h3>
-                                ${x.title}
-                            </h3>
 
-                            <h4>
-                                ${x.area}
-                            </h4>
+            if (researchList) {
 
-                            <p>
-                                ${x.description}
-                            </p>
-                        </div>
+                researchList.innerHTML =
+                    r.experience
+                        .map(x => `
 
-                    </div>
-                `)
-                .join("");
+                            <div class="item">
+
+                                <div class="item-date">
+                                    ${x.period}
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        ${x.title}
+                                    </h3>
+
+                                    <h4>
+                                        ${x.area}
+                                    </h4>
+
+                                    <p>
+                                        ${x.description}
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        `)
+                        .join("");
+            }
         }
 
 
-        /* -------------------------------------------------
+        /* =================================================
            Publications
-           ------------------------------------------------- */
+           Year → Image → Information
+           ================================================= */
 
         if (page === "publications") {
 
@@ -238,64 +297,78 @@ async function renderPage() {
                     "data/publications.json"
                 );
 
-            document.getElementById(
-                "publication-list"
-            ).innerHTML = p
-                .map(x => `
-                    <div class="publication">
 
-                        <!-- Year -->
-                        <div class="publication-year">
-                            ${x.year}
-                        </div>
+            const publicationList =
+                document.getElementById(
+                    "publication-list"
+                );
 
 
-                        <!-- Paper Front Page -->
-                        <div class="publication-cover-wrap">
+            if (publicationList) {
 
-                            <img
-                                class="publication-cover"
-                                src="${x.image}"
-                                alt="Front page of ${x.title}"
-                                loading="lazy">
+                publicationList.innerHTML =
+                    p
+                        .map(x => `
 
-                        </div>
+                            <div class="publication">
+
+                                <!-- Year -->
+
+                                <div class="publication-year">
+                                    ${x.year}
+                                </div>
 
 
-                        <!-- Publication Information -->
-                        <div class="publication-content">
+                                <!-- Paper Front Page -->
 
-                            <h3>
-                                ${x.title}
-                            </h3>
+                                <div class="publication-cover-wrap">
 
-                            <p class="authors">
-                                ${x.authors}
-                            </p>
+                                    <img
+                                        class="publication-cover"
+                                        src="${x.image}"
+                                        alt="Front page of ${x.title}"
+                                        loading="lazy">
 
-                            <p class="journal">
-                                ${x.journal}
-                            </p>
+                                </div>
 
-                            <a
-                                class="link"
-                                href="${x.link}"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                DOI / Article →
-                            </a>
 
-                        </div>
+                                <!-- Publication Information -->
 
-                    </div>
-                `)
-                .join("");
+                                <div class="publication-content">
+
+                                    <h3>
+                                        ${x.title}
+                                    </h3>
+
+                                    <p class="authors">
+                                        ${x.authors}
+                                    </p>
+
+                                    <p class="journal">
+                                        ${x.journal}
+                                    </p>
+
+                                    <a
+                                        class="link"
+                                        href="${x.link}"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        DOI / Article →
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        `)
+                        .join("");
+            }
         }
 
 
-        /* -------------------------------------------------
+        /* =================================================
            Academic Projects
-           ------------------------------------------------- */
+           ================================================= */
 
         if (page === "projects") {
 
@@ -304,49 +377,60 @@ async function renderPage() {
                     "data/projects.json"
                 );
 
-            document.getElementById(
-                "project-list"
-            ).innerHTML = p
-                .map(x => `
-                    <div>
 
-                        <div class="project-top">
-                            ${x.short}
-                        </div>
+            const projectList =
+                document.getElementById(
+                    "project-list"
+                );
 
-                        <div class="project-body">
 
-                            <span class="meta">
-                                ${x.category}
-                            </span>
+            if (projectList) {
 
-                            <h3>
-                                ${x.title}
-                            </h3>
+                projectList.innerHTML =
+                    p
+                        .map(x => `
 
-                            <p>
-                                ${x.description}
-                            </p>
+                            <div>
 
-                            <a
-                                class="link"
-                                href="${x.link}"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Project details →
-                            </a>
+                                <div class="project-top">
+                                    ${x.short}
+                                </div>
 
-                        </div>
+                                <div class="project-body">
 
-                    </div>
-                `)
-                .join("");
+                                    <span class="meta">
+                                        ${x.category}
+                                    </span>
+
+                                    <h3>
+                                        ${x.title}
+                                    </h3>
+
+                                    <p>
+                                        ${x.description}
+                                    </p>
+
+                                    <a
+                                        class="link"
+                                        href="${x.link}"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        Project details →
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        `)
+                        .join("");
+            }
         }
 
 
-        /* -------------------------------------------------
+        /* =================================================
            Profile
-           ------------------------------------------------- */
+           ================================================= */
 
         if (page === "profile") {
 
@@ -355,10 +439,12 @@ async function renderPage() {
                     "data/profile.json"
                 );
 
+
             setText(
                 "profile-name",
                 p.name
             );
+
 
             setText(
                 "profile-about",
@@ -366,35 +452,48 @@ async function renderPage() {
             );
 
 
-            document.getElementById(
-                "education-list"
-            ).innerHTML = p.education
-                .map(x => `
-                    <div class="card">
+            const educationList =
+                document.getElementById(
+                    "education-list"
+                );
 
-                        <span class="meta">
-                            ${x.period}
-                        </span>
 
-                        <h3>
-                            ${x.degree}
-                        </h3>
+            if (educationList) {
 
-                        <p>
-                            ${x.institution}
-                        </p>
+                educationList.innerHTML =
+                    p.education
+                        .map(x => `
 
-                        <strong>
-                            ${x.result}
-                        </strong>
+                            <div class="card">
 
-                    </div>
-                `)
-                .join("");
+                                <span class="meta">
+                                    ${x.period}
+                                </span>
+
+                                <h3>
+                                    ${x.degree}
+                                </h3>
+
+                                <p>
+                                    ${x.institution}
+                                </p>
+
+                                <strong>
+                                    ${x.result}
+                                </strong>
+
+                            </div>
+
+                        `)
+                        .join("");
+            }
         }
 
+
     } catch (e) {
+
         console.error(e);
+
     }
 }
 
@@ -407,18 +506,26 @@ document.addEventListener(
     "DOMContentLoaded",
     () => {
 
+        /* Current Year */
+
         setText(
             "year",
             new Date().getFullYear()
         );
 
 
+        /* Page Rendering */
+
         if (
             document.body.dataset.page === "home"
         ) {
+
             renderHome();
+
         } else {
+
             renderPage();
+
         }
 
 
@@ -428,6 +535,7 @@ document.addEventListener(
             location.pathname.split("/").pop()
             || "index.html";
 
+
         document
             .querySelectorAll("nav a")
             .forEach(a => {
@@ -436,7 +544,9 @@ document.addEventListener(
                     a.getAttribute("href")
                     === current
                 ) {
+
                     a.classList.add("active");
+
                 }
 
             });
