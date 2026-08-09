@@ -11,20 +11,20 @@
   },
   "socials": [
     {
-      "name": "GitHub",
-      "url": "https://github.com/yourusername"
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=CeRUF4oAAAAJ&hl=en"
     },
     {
       "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/yourusername/"
+      "url": "https://www.linkedin.com/in/soikot-sarkar-susteee"
     },
     {
       "name": "ORCID",
-      "url": "https://orcid.org/0000-0000-0000-0000"
+      "url": "https://orcid.org/my-orcid?orcid=0009-0007-1199-1435"
     },
     {
       "name": "ResearchGate",
-      "url": "https://www.researchgate.net/profile/Your-Name"
+      "url": "https://www.researchgate.net/profile/Soikot-Sarkar"
     }
   ],
   "education": [
