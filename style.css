@@ -51,7 +51,7 @@ nav a:hover:after,nav a.active:after{width:100%}
 .social-btn:hover{color:var(--primary-dark);background:var(--primary-light);border-color:#AFCFD7;transform:translateY(-1px)}
 
 /* Sections */
-.section{padding:68px 0}.light{background:var(--bg)}.compact-section{padding:64px 0}
+.section{padding:68px 0}.light{background:var(--bg)}.compact-section{padding:50px 0}
 .compact-section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}
 .compact-section-heading h2,.heading h2{margin-top:5px;color:var(--text);font-size:31px;line-height:1.15;letter-spacing:-1.2px}
 .text-link{color:var(--primary);font-size:12px;font-weight:800;white-space:nowrap}.text-link:hover{color:var(--primary-dark)}
