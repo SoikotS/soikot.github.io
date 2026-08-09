@@ -713,10 +713,7 @@ nav a.active:after {
 .project-body p {
     white-space: pre-line;
 }
-#profile-about,
-#about-text {
-    text-align: justify;
-}
+
 
 /* =========================================================
    Other Pages
