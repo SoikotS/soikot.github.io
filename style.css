@@ -1439,7 +1439,7 @@ footer {
     .info {
         flex-direction: column;
 
-        gap: 4px;
+        gap: 2px;
     }
 
     .info strong {
