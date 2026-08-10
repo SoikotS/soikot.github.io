@@ -43,5 +43,22 @@
       "link": "https://ieeexplore.ieee.org/abstract/document/9230935"
     }
   ],
-  "under_review_preparation": []
+  "under_review_preparation": [
+	{
+      "year": ,
+      "title": "Metasurface Based RGB Color Router Using PSO For Image Sensor Application",
+      "authors": "Soikot Sarkar, Md. Faiaad Rahman, Ahmed Zubair",
+      "journal": "",
+      "image": "",
+      "link": ""
+    },
+	{
+      "year": ,
+      "title": "Grating Based Absorber For Thermal Emitter Application",
+      "authors": "Soikot Sarkar, Puja Das, Sajid Muhaimin Choudhury",
+      "journal": "",
+      "image": "",
+      "link": ""
+    }
+  ]
 }
