@@ -1,70 +1,21 @@
 {
   "journal_articles": [
     {
-      "year": 2026,
-      "title": "Multipolar Origin and Polarization-Controlled of High-Q Quasi-BIC Fano Resonances in Dielectric Metasurfaces for Sensing Applications",
-      "authors": "Soikot Sarkar, Ahmed Zubair",
-      "journal": "Nanoscale Advances",
-      "image": "",
-      "link": "https://pubs.rsc.org/en/content/articlelanding/2026/na/d5na01014d"
+      "year": 2025,
+      "title": "Efficiency enhancement of c-Si/TiO₂ heterojunction thin film solar cell using hybrid metal-dielectric nanostructures",
+      "authors": "Soikot Sarkar, Sajid Muhaimin Choudhury",
+      "journal": "Solar Energy",
+      "image": "assets/papers/j1.jpg",
+      "link": "https://doi.org/10.1016/j.solener.2025.113535"
     },
     {
       "year": 2025,
-      "title": "Efficiency Enhancement of c-Si/TiO₂ Heterojunction Thin Film Solar Cell Using Hybrid Metal-Dielectric Nanostructures",
-      "authors": "Soikot Sarkar, Sajid Muhaimin Choudhury",
-      "journal": "Solar Energy",
-      "link": "https://www.sciencedirect.com/science/article/pii/S0038092X25002981?dgcid=coauthor"
-    },
-	{
-      "year": 2024,
       "title": "Polarization Tunable Incident Angle Tolerant Dielectric Metasurface-Based Color Filter",
-	"authors": "Soikot Sarkar, Dip Sarker, and Ahmed Zubair\n[Selected for the cross-journal Themed Collection on Light-(nano)Matter Interactions in line with Light-nanoMatter Interactions Summer School]",
+      "authors": "Soikot Sarkar et al.",
       "journal": "Materials Advances",
-      "link": "https://pubs.rsc.org/en/content/articlelanding/2024/ma/d4ma00291a"
+      "link": "https://doi.org/10.1039/D4MA00291A"
     }
   ],
-  "conference_proceedings": [
-	{
-      "year": 2023,
-      "title": "Design and Performance Analysis of a c-Si Thin-Film Solar Cell Using Plasmonic Ag Nanostructures",
-      "authors": "Soikot Sarkar, Sajid Muhaimin Choudhury",
-      "journal": "IEEE International Conference on Telecommunications and Photonics (ICTP)",
-      "image": "",
-      "link": "https://ieeexplore.ieee.org/abstract/document/10490886"
-    },
-	{
-      "year": 2020,
-      "title": "Lattice Structure Dependent Modulation of Photonic Band Gap in Gallium Phosphide Based 2D Photonic Crystal",
-      "authors": "Md. Shariful Islam, Soikot Sarkar, Ishfak Mahin Tahmid, & Md. Asaduz Zaman Mamun",
-      "journal": "IEEE Region 10 Symposium (TENSYMP)",
-      "image": "",
-      "link": "https://ieeexplore.ieee.org/abstract/document/9230935"
-    }
-  ],
-  "under_preparation_or_review": [
-    {
-	  "year": ,
-      "title": "Metasurface-Based RGB Color Router Using PSO For Image Sensor Application",
-      "authors": "Soikot Sarkar, Md. Faiaad Rahman, and Ahmed Zubair",
-      "journal": "",
-      "image": "",
-      "link": ""
-	},
-	{
-	  "year": ,
-      "title": "Design of a Grating-Metasurface-Based Ultra-Broadband Near-Perfect Absorber for Thermal Emitter Application",
-      "authors": "Soikot Sarkar, Puja Das, and Sajid Muhaimin Choudury",
-      "journal": "",
-      "image": "",
-      "link": ""
-	},
-	{
-	  "year": ,
-      "title": "Multimode Plasmonic Resonance Ultra Broadband Metamaterial Absorber",
-      "authors": "Soikot Sarkar, Sajid Muhaimin Choudury",
-      "journal": "",
-      "image": "",
-      "link": ""
-	}
-  ]
+  "conference_proceedings": [],
+  "under_preparation_or_review": []
 }
