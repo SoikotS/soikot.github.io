@@ -18,7 +18,7 @@
     "title": "Multipolar Origin and Polarization-Controlled of High-Q Quasi-BIC Fano Resonances in Dielectric Metasurfaces for Sensing Applications.",
     "authors": "Soikot Sarkar, Ahmed Zubair",
     "journal": "Nanoscale Advances",
-    "image": "assets/papers/j1.jpg",
+	"image": "assets/papers/j1.jpg",
     "link": "https://pubs.rsc.org/en/content/articlelanding/2026/na/d5na01014d"
   },
   "experience": [
@@ -26,22 +26,19 @@
       "period": "Present",
       "title": "Photonics & Nanophotonics Research",
       "area": "Computational Electromagnetics",
-      "description": "Design and analysis of nanoscale photonic structures using electromagnetic simulation and numerical optimization.",
-      "image": "assets/research/photonics.jpg"
+      "description": "Design and analysis of nanoscale photonic structures using electromagnetic simulation and numerical optimization."
     },
     {
       "period": "2025",
       "title": "Hybrid Metal–Dielectric Nanostructures",
       "area": "Solar Energy & Photovoltaics",
-      "description": "Investigation of nanostructure-assisted optical absorption enhancement in c-Si/TiO₂ heterojunction thin-film solar cells.",
-      "image": "assets/papers/j1.jpg"
+      "description": "Investigation of nanostructure-assisted optical absorption enhancement in c-Si/TiO₂ heterojunction thin-film solar cells."
     },
     {
       "period": "Ongoing",
       "title": "Integrated Photonics",
       "area": "Silicon Photonics & Waveguides",
-      "description": "Research interests include subwavelength structures, mode manipulation, polarization control, and compact integrated photonic devices.",
-      "image": "assets/research/integrated-photonics.jpg"
+      "description": "Research interests include subwavelength structures, mode manipulation, polarization control, and compact integrated photonic devices."
     }
   ]
 }
