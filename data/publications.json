@@ -1,22 +1,47 @@
 {
   "journal_articles": [
     {
+      "year": 2026,
+      "title": "Multipolar origin and polarization-controlled high-Q quasi-BIC Fano resonances in dielectric metasurfaces for sensing applications",
+      "authors": "Soikot Sarkar, Ahmed Zubair",
+      "journal": "Nanoscale Advances",
+      "image": "assets/papers/j1.jpg",
+      "link": "https://pubs.rsc.org/na/article/8/4/1386/898327/Multipolar-origin-and-polarization-controlled-high"
+    },
+	{
       "year": 2025,
-      "title": "Efficiency enhancement of c-Si/TiO₂ heterojunction thin film solar cell using hybrid metal-dielectric nanostructures",
+      "title": "Efficiency enhancement of c-Si/TiO2 heterojunction thin film solar cell using hybrid metal-dielectric nanostructures",
       "authors": "Soikot Sarkar, Sajid Muhaimin Choudhury",
       "journal": "Solar Energy",
       "image": "assets/papers/j1.jpg",
-      "link": "https://doi.org/10.1016/j.solener.2025.113535"
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0038092X25002981"
     },
     {
-      "year": 2025,
-      "title": "Polarization Tunable Incident Angle Tolerant Dielectric Metasurface-Based Color Filter",
-      "authors": "Soikot Sarkar et al.",
+      "year": 2024,
+      "title": "A polarization tunable incident angle tolerant dielectric metasurface-based color filter",
+      "authors": "Soikot Sarkar, Dip Sarker, Ahmed Zubair",
       "journal": "Materials Advances",
       "image": "assets/papers/j2.jpg",
-      "link": "https://doi.org/10.1039/D4MA00291A"
+      "link": "https://pubs.rsc.org/ma/article/5/18/7455/853852/A-polarization-tunable-incident-angle-tolerant"
     }
   ],
-  "conference_proceedings": [],
+  "conference_proceedings": [
+	{
+      "year": 2023,
+      "title": "Design and Performance Analysis of a c-Si Thin-Film Solar Cell Using Plasmonic Ag Nanostructures",
+      "authors": "Soikot Sarkar, Sajid Muhaimin Choudhury",
+      "journal": "2023 IEEE International Conference on Telecommunications and Photonics (ICTP)",
+      "image": "assets/papers/j1.jpg",
+      "link": "https://ieeexplore.ieee.org/abstract/document/10490886"
+    },
+	{
+      "year": 2020,
+      "title": "Lattice structure dependent modulation of photonic band Gap in gallium phosphide based 2D photonic crystal",
+      "authors": "Md Shariful Islam, Soikot Sarkar, Md Ishfak Tahmid, Md Asaduz Zaman Mamun",
+      "journal": "2020 IEEE Region 10 Symposium (TENSYMP)
+      "image": "assets/papers/j1.jpg",
+      "link": "https://ieeexplore.ieee.org/abstract/document/9230935"
+    },
+  ],
   "under_review_preparation": []
 }
