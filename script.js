@@ -211,64 +211,48 @@ async function renderPage() {
            Year → Image → Information
            ================================================= */
 
-        if (page === "publications") {
-            const p = await loadJSON("data/publications.json");
-            const publicationList = document.getElementById("publication-list");
+        if(page==="publications"){
+const p=await loadJSON("data/publications.json");
+const list=document.getElementById("publication-list");
 
-            if (publicationList && Array.isArray(p)) {
-                publicationList.innerHTML = p.map(x => `
-                    <div class="publication">
+const categories=[
+{key:"journal_articles",label:"JOURNAL ARTICLES",title:"Journal Articles"},
+{key:"conference_proceedings",label:"CONFERENCE PROCEEDINGS",title:"Conference Proceedings"},
+{key:"under_review_preparation",label:"UNDER REVIEW / PREPARATION",title:"Journal Articles Under Review / Preparation"}
+];
 
-                        <div class="publication-year">
-                            ${escapeHTML(x.year)}
-                        </div>
+function publicationCard(x){
+return `<div class="publication">
+<div class="publication-year">${x.year||""}</div>
+<div class="publication-cover-wrap">
+${x.image
+?`<img class="publication-cover" src="${x.image}" alt="Front page of ${x.title||"publication"}" loading="lazy">`
+:`<div class="publication-cover publication-cover-empty"><span>NO<br>IMAGE</span></div>`}
+</div>
+<div class="publication-content">
+<h3>${x.title||""}</h3>
+<p class="authors">${x.authors||""}</p>
+<p class="journal">${x.journal||""}</p>
+${x.status?`<span class="publication-status">${x.status}</span>`:""}
+${x.link&&x.link!=="#"?`<a class="link" href="${x.link}" target="_blank" rel="noopener noreferrer">DOI / Article →</a>`:""}
+</div>
+</div>`;
+}
 
-                        <div class="publication-cover-wrap">
-                            ${
-                                x.image
-                                    ? `
-                                        <img class="publication-cover"
-                                             src="${escapeHTML(x.image)}"
-                                             alt="Front page of ${escapeHTML(x.title)}"
-                                             loading="lazy"
-                                             onerror="this.style.display='none'; this.parentElement.classList.add('image-missing');">
-                                      `
-                                    : `
-                                        <div class="publication-cover publication-cover-empty"></div>
-                                      `
-                            }
-                        </div>
-
-                        <div class="publication-content">
-                            <h3>${escapeHTML(x.title)}</h3>
-                            <p class="authors">${escapeHTML(x.authors)}</p>
-                            <p class="journal">${escapeHTML(x.journal)}</p>
-
-                            ${
-                                x.link
-                                    ? `
-                                        <a class="link"
-                                           href="${escapeHTML(x.link)}"
-                                           target="_blank"
-                                           rel="noopener noreferrer">
-                                            DOI / Article →
-                                        </a>
-                                      `
-                                    : ""
-                            }
-                        </div>
-
-                    </div>
-                `).join("");
-            }
-        }
-
-
-        /* =================================================
-           Academic Projects
-           ================================================= */
-
-        if (page === "projects") {
+list.innerHTML=categories.map(c=>{
+const items=Array.isArray(p[c.key])?p[c.key]:[];
+return `<section class="publication-category">
+<div class="publication-category-heading">
+<p class="section-label">${c.label}</p>
+<h2>${c.title}</h2>
+</div>
+${items.length
+?items.map(publicationCard).join("")
+:`<div class="publication-empty">No publications listed in this category.</div>`}
+</section>`;
+}).join("");
+}
+if (page === "projects") {
             const p = await loadJSON("data/projects.json");
             const projectList = document.getElementById("project-list");
 

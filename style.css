@@ -1834,3 +1834,79 @@ footer {
         padding: 19px;
     }
 }
+
+
+/* =========================================================
+   PUBLICATION CATEGORIES
+   ========================================================= */
+
+.publication-category{
+    margin-bottom:58px;
+}
+
+.publication-category:last-child{
+    margin-bottom:0;
+}
+
+.publication-category-heading{
+    padding-bottom:17px;
+    border-bottom:3px solid var(--primary);
+}
+
+.publication-category-heading h2{
+    margin-top:5px;
+    color:var(--text);
+    font-size:28px;
+    line-height:1.2;
+    letter-spacing:-1px;
+}
+
+.publication-category .publication:first-of-type{
+    border-top:0;
+}
+
+.publication-empty{
+    padding:24px 0;
+    color:var(--muted);
+    font-size:13px;
+    font-style:italic;
+    border-bottom:1px solid var(--line);
+}
+
+.publication-status{
+    display:inline-block;
+    margin-top:9px;
+    padding:4px 8px;
+    border:1px solid #CFE1E5;
+    border-radius:5px;
+    background:var(--primary-light);
+    color:var(--primary-dark);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.4px;
+}
+
+.publication-cover-empty{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.publication-cover-empty span{
+    color:var(--primary);
+    font-size:9px;
+    font-weight:850;
+    line-height:1.35;
+    letter-spacing:1px;
+}
+
+@media(max-width:600px){
+    .publication-category{
+        margin-bottom:42px;
+    }
+
+    .publication-category-heading h2{
+        font-size:24px;
+    }
+}
