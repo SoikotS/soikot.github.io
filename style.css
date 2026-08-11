@@ -1541,14 +1541,14 @@ footer {
 
 .research-item-content {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 24px;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 26px;
     align-items: start;
 }
 
 .research-image-wrap {
-    width: 150px;
-    height: 190px;
+    width: 190px;
+    height: 235px;
     overflow: hidden;
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -1811,13 +1811,13 @@ footer {
 @media (max-width: 850px) {
 
     .research-item-content {
-        grid-template-columns: 120px minmax(0, 1fr);
-        gap: 18px;
+        grid-template-columns: 150px minmax(0, 1fr);
+        gap: 20px;
     }
 
     .research-image-wrap {
-        width: 120px;
-        height: 155px;
+        width: 150px;
+        height: 190px;
     }
 
     .profile-experience-item {
@@ -1936,4 +1936,30 @@ footer {
     .publication-category-heading h2{
         font-size:24px;
     }
+}
+
+
+/* =========================================================
+   JUSTIFIED DESCRIPTION TEXT
+   ========================================================= */
+
+.hero-desc,
+.compact-research .card p,
+.item p,
+.research-item-text p,
+.publication-content .authors,
+.publication-content .journal,
+.project-body p,
+.education-institution,
+.education-detail,
+.education-courses,
+.profile-experience-item p,
+.skill-card p,
+.activity-item p,
+.compact-about > p,
+.update p,
+#profile-about,
+#about-text {
+    text-align: justify;
+    text-justify: inter-word;
 }
