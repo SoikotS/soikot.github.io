@@ -726,6 +726,33 @@ nav a.active:after {
     font-size: 12px;
 }
 
+/* ---------- Scrollable Latest Activities ---------- */
+#updates {
+    height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #B7D4DB var(--primary-soft);
+}
+
+#updates::-webkit-scrollbar {
+    width: 5px;
+}
+
+#updates::-webkit-scrollbar-track {
+    background: var(--primary-soft);
+    border-radius: 10px;
+}
+
+#updates::-webkit-scrollbar-thumb {
+    background: #B7D4DB;
+    border-radius: 10px;
+}
+
+#updates::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
 
 /* =========================================================
    Preserve Line Breaks from JSON
