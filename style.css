@@ -308,7 +308,7 @@ nav a.active:after {
 .metric strong {
     color: var(--primary);
 
-    font-size: 31px;
+    font-size: 25px;
     line-height: 1;
 }
 
