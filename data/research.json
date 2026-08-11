@@ -49,6 +49,20 @@
       "area": "Metasurface",
       "description": "We designed and analyzed a Si–SiO₂–Si dielectric metasurface to achieve polarization-dependent structural colorization by exploiting refractive index contrast. Using FDTD simulations, we studied optical responses and electric field distributions, revealing strong light–matter interactions and asymmetric reflection behavior. Through parametric optimization, we achieved a high color difference (~68) for TE-polarized light with minimal loss and maintained stable performance (~20) up to a 60° incident angle. Our work demonstrates the potential of dielectric metasurfaces for hyperspectral imaging, color filtering, and anti-counterfeiting applications.",
       "image": "assets/research/struc21.jpg"
+    },
+    {
+      "period": "2023",
+      "title": "Plasmon-Enhanced c-Si Thin-Film Solar Cell",
+      "area": "Solar Energy & Photovoltaics",
+      "description": "We designed an n–p junction c-Si thin-film solar cell featuring Ag nanostructured back reflectors and inverted triangular grooves for enhanced light trapping. Using FDTD simulations, we achieved 84.36% average absorption, Jsc of 40.66 mA/cm², and efficiency of 17.25%. The structure maintained strong performance across 0°–60° incidence angles, and optimization of the unit cell period further improved efficiency, demonstrating the potential of plasmonic nanostructures for high-efficiency solar cells.",
+      "image": "assets/research/concept.jpg"
+    },
+    {
+      "period": "2020",
+      "title": "GaP-Based Photonic Crystals for Band Gap Engineering",
+      "area": "Nanophotonics",
+      "description": "We investigated gallium phosphide (GaP) photonic crystals with various lattice geometries—triangular, hexagonal, and honeycomb—for both hole and rod configurations to study their band gap characteristics. By performing a comparative band structure analysis, we identified a wide photonic band gap (103.77–340.91 THz) and examined the magnetic field distribution to explain the underlying gap formation mechanism. Our results include a comprehensive gap-map for GaP-based PCs, providing design guidelines for achieving desired frequency responses. This study demonstrates the potential of GaP photonic crystals for fiber-optic and far-infrared photonic applications.",
+      "image": "assets/research/pc.png"
     }
   ]
 }
