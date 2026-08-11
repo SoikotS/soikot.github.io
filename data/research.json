@@ -27,7 +27,7 @@
       "title": "Metasurface Based Color Router Using PSO",
       "area": "Metasurface",
       "description": "Designed a Metasurface that mimics the Bayer's color filter. We utilized this color router along with Perovskite-based photo-detector to implement a image sensor. [ Manuscript is under preparation]",
-      "image": "assets/research/photonics.jpg"
+      "image": "assets/research/T_rgb.jpg"
     },
     {
       "period": "2026",
