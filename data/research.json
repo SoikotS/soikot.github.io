@@ -41,14 +41,14 @@
       "title": "Hybrid Metal-Dielectric Nanostructure Integrated Solar Cell",
       "area": "Solar Energy & Photovoltaics",
       "description": "We designed and analyzed a c-Si/TiO₂ heterojunction thin-film solar cell incorporating Ag–AZO hybrid metal–dielectric nanostructures (HMDN) to mitigate ohmic losses and enhance light absorption. Using finite-difference time-domain (FDTD) simulations, we showed that the triangular HMDN pair significantly improved long-wavelength absorption through strong field confinement and directional scattering, while TiO₂, ITO, and SiO₂ pyramid layers enhanced short-wavelength absorption by extending the optical path.The optimized structure achieved an average absorption of 83.32%, a short-circuit current density (Jsc) of 37.96 mA/cm², and a power conversion efficiency (PCE) of 17.42%, with only 0.34% variation under polarization change. The inclusion of HMDN resulted in a 4.54% efficiency enhancement compared to conventional designs, demonstrating their effectiveness in improving the performance of thin-film solar cells.",
-      "image": "assets/papers/j1.jpg"
+      "image": "assets/papers/e p unpol.jpg"
     },
     {
       "period": "2024",
       "title": "Metasurface-based Color Filter",
       "area": "Metasurface",
       "description": "We designed and analyzed a Si–SiO₂–Si dielectric metasurface to achieve polarization-dependent structural colorization by exploiting refractive index contrast. Using FDTD simulations, we studied optical responses and electric field distributions, revealing strong light–matter interactions and asymmetric reflection behavior. Through parametric optimization, we achieved a high color difference (~68) for TE-polarized light with minimal loss and maintained stable performance (~20) up to a 60° incident angle. Our work demonstrates the potential of dielectric metasurfaces for hyperspectral imaging, color filtering, and anti-counterfeiting applications.",
-      "image": "assets/research/integrated-photonics.jpg"
+      "image": "assets/research/struc21.jpg"
     }
   ]
 }
