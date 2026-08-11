@@ -5,12 +5,12 @@
       "description": "Nanoscale optical structures and light–matter interaction."
     },
     {
-      "title": "Silicon Photonics",
-      "description": "Integrated waveguides, mode manipulation and polarization control."
-    },
-    {
       "title": "Metasurfaces",
       "description": "Dielectric and hybrid structures for spectral and optical control."
+    },
+    {
+      "title": "Silicon Photonics",
+      "description": "Integrated waveguides, mode manipulation and polarization control."
     }
   ],
   "featured": {
