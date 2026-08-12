@@ -24,6 +24,13 @@
   "experience": [
 	{
       "period": "Ongoing",
+      "title": "Grating Metasurface Based Broadband Absorber for Thermal Emitter",
+      "area": "Metasurface",
+      "description": "Modelled a 1D grating structure which synergistically utilized plasmonic, cavity and magnetic modes, offering a broadband absorber with 2584 nm bandwith and 95.90% average absorption. We showed the structure can be good candidate for thermal emitter.",
+      "image": "assets/research/H1115.jpg"
+    },
+	{
+      "period": "Ongoing",
       "title": "Metasurface Based Color Router Using PSO",
       "area": "Metasurface",
       "description": "Designed a Metasurface that mimics the Bayer's color filter. We utilized this color router along with Perovskite-based photo-detector to implement a image sensor. [ Manuscript is under preparation]",
