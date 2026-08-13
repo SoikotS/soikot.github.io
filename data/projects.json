@@ -33,16 +33,16 @@
   },
   {
     "short": "IP",
-    "category": "IP Address Calculator with C",
-    "title": "Automatic Power Factor Improvement Plant",
+    "category": "C Project",
+    "title": "IP Address Calculator with C",
     "description": "A CIDR-based IP Address Calculator that determines essential network information, including the network address, subnet mask, broadcast address, and available host addresses. It also supports IP subnetting, providing complete information for each generated subnet, including its network address, host range, and broadcast address.",
     "image": "assets/projects/IP.png",
     "link": "https://drive.google.com/file/d/1_CIV6EDsmbAJGDWVB2iVTgn5J1c2ueFL/view?usp=sharing"
   },
   {
     "short": "Bash",
-    "category": "Book Management System with bash",
-    "title": "Automatic Power Factor Improvement Plant",
+    "category": "Bash",
+    "title": "Book Management System with bash",
     "description": "A Text-Based Library Management System designed to efficiently manage a large collection of books. It allows users to add, search, update, delete, and explore book records, with information such as book name, author, and shelf number stored in a text-file database.",
     "image": "assets/projects/bash.png",
     "link": "https://drive.google.com/file/d/1Vr3Ln_27twOCwN0ba4J9t083IORk7jPR/view?usp=sharing"
