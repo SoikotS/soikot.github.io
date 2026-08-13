@@ -1,6 +1,11 @@
 [
   {
     "date": "August 2026",
+    "title": "Learning VarFDTD",
+    "description": "I am learning Ansys Lumerical’s VarFDTD for conducting PIC-based simulations. VarFDTD is used alongside FDE, EME, and FDTD for comprehensive PIC analysis."
+  },
+  {
+    "date": "August 2026",
     "title": "New Academic portfolio launched",
     "description": "Created a new research-focused personal website for sharing academic work, publications and projects."
   },
