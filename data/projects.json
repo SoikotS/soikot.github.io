@@ -2,24 +2,32 @@
   {
     "short": "FDTD",
     "category": "PHOTONICS",
-    "title": "Nanophotonic Structure Design",
-    "description": "Electromagnetic simulation and optimization of nanoscale optical structures.",
+    "title": "Optical Performance Analysis of CNT Based Ultrathin Image Sensor",
+    "description": "We utilized Bayer's color filter along with 1um of CNT as absorbing layer due to its high absorption, to implement a image sensor. We observed about 90% of efficiency by this CNT-based absorbing layer.",
     "image": "assets/projects/project1.jpg",
     "link": "#"
   },
   {
     "short": "Si",
-    "category": "SILICON PHOTONICS",
-    "title": "Integrated Photonic Devices",
-    "description": "Waveguide design, mode analysis, polarization manipulation and photonic device concepts.",
+    "category": "VLSI",
+    "title": "Layout design of a 4 bits Universal Shift Register",
+    "description": "This 4 bit Universal Shift Register integrated circuit was designed and tested. Cadence, a popular EDA program, was used to develop the layout. The entire circuit was made up of 360 MOSFETs, with the device area measuring just 87.89nm*36.56nm.",
     "image": "assets/projects/project2.jpg",
     "link": "#"
   },
   {
+    "short": "Communication",
+    "category": "Communication",
+    "title": "Voice Recognition Using Arduino and MATLAB",
+    "description": "This device can recognize the individual speaker whose voice is already taken at training time. Here we use five different types of LED for displaying the output by Arduino. This project has totally implemented by MATLAB.",
+    "image": "assets/projects/project3.jpg",
+    "link": "#"
+  },
+  {
     "short": "PV",
-    "category": "SOLAR ENERGY",
-    "title": "Nanostructure-Enhanced Solar Cell",
-    "description": "Optical engineering of hybrid nanostructures for improved photovoltaic performance.",
+    "category": "Power System",
+    "title": "Automatic Power Factor Improvement Plant",
+    "description": "An Arduino-based Automatic Power Factor Correction (APFC) system that monitors varying inductive and capacitive loads and automatically switches a capacitor bank to improve the power factor toward unity. The system uses Arduino, transformers, capacitor banks, and switching circuits to provide efficient reactive power compensation under changing load conditions.",
     "image": "assets/projects/project3.jpg",
     "link": "#"
   }
