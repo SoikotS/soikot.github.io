@@ -5,7 +5,7 @@
     "title": "Optical Performance Analysis of CNT Based Ultrathin Image Sensor",
     "description": "We utilized Bayer's color filter along with 1um of CNT as absorbing layer due to its high absorption, to implement a image sensor. We observed about 90% of efficiency by this CNT-based absorbing layer.",
     "image": "assets/projects/IS.png",
-    "link": "#"
+    "link": "https://docs.google.com/presentation/d/11lq_Bt6zD42yzKZqe8aOXQDHvGtOFJ4Q/edit#slide=id.p16"
   },
   {
     "short": "Si",
@@ -13,7 +13,7 @@
     "title": "Layout design of a 4 bits Universal Shift Register",
     "description": "This 4 bit Universal Shift Register integrated circuit was designed and tested. Cadence, a popular EDA program, was used to develop the layout. The entire circuit was made up of 360 MOSFETs, with the device area measuring just 87.89nm*36.56nm.",
     "image": "assets/projects/vlsi.png",
-    "link": "#"
+    "link": "https://drive.google.com/drive/folders/1VzRUsUCCEKY9AABPIjn7NQXGbn36q-KE?usp=sharing"
   },
   {
     "short": "Communication",
@@ -21,7 +21,7 @@
     "title": "Voice Recognition Using Arduino and MATLAB",
     "description": "This device can recognize the individual speaker whose voice is already taken at training time. Here we use five different types of LED for displaying the output by Arduino. This project has totally implemented by MATLAB.",
     "image": "assets/projects/Com.png",
-    "link": "#"
+    "link": "https://www.youtube.com/watch?v=YijJOaNUKCY&ab_channel=EEESUSTPROJECTS"
   },
   {
     "short": "PS",
@@ -29,7 +29,7 @@
     "title": "Automatic Power Factor Improvement Plant",
     "description": "An Arduino-based Automatic Power Factor Correction (APFC) system that monitors varying inductive and capacitive loads and automatically switches a capacitor bank to improve the power factor toward unity. The system uses Arduino, transformers, capacitor banks, and switching circuits to provide efficient reactive power compensation under changing load conditions.",
     "image": "assets/projects/PS.png",
-    "link": "#"
+    "link": "https://www.youtube.com/watch?v=02IdLsTeg14&t=1s&ab_channel=NoushadHossain"
   },
   {
     "short": "IP",
@@ -37,7 +37,7 @@
     "title": "Automatic Power Factor Improvement Plant",
     "description": "A CIDR-based IP Address Calculator that determines essential network information, including the network address, subnet mask, broadcast address, and available host addresses. It also supports IP subnetting, providing complete information for each generated subnet, including its network address, host range, and broadcast address.",
     "image": "assets/projects/IP.png",
-    "link": "#"
+    "link": "https://drive.google.com/file/d/1_CIV6EDsmbAJGDWVB2iVTgn5J1c2ueFL/view?usp=sharing"
   },
   {
     "short": "Bash",
@@ -45,6 +45,6 @@
     "title": "Automatic Power Factor Improvement Plant",
     "description": "A Text-Based Library Management System designed to efficiently manage a large collection of books. It allows users to add, search, update, delete, and explore book records, with information such as book name, author, and shelf number stored in a text-file database.",
     "image": "assets/projects/bash.png",
-    "link": "#"
+    "link": "https://drive.google.com/file/d/1Vr3Ln_27twOCwN0ba4J9t083IORk7jPR/view?usp=sharing"
   }
 ]
