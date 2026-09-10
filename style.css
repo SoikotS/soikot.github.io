@@ -1,19 +1,29 @@
 :root {
-    --primary: #176B87;
-    --primary-dark: #0D4F63;
-    --primary-light: #E7F4F7;
-    --primary-soft: #F3FAFB;
+    --primary: #4F46E5;
+    --primary-dark: #312E81;
+    --primary-light: #EEF2FF;
+    --primary-soft: #F8FAFC;
 
-    --text: #16323C;
-    --muted: #647980;
-    --line: #D8E7EA;
+    --text: #172033;
+    --muted: #64748B;
+    --line: #E2E8F0;
 
     --white: #fff;
-    --bg: #F6FAFB;
+    --bg: #F8FAFC;
 
-    --shadow: 0 14px 40px rgba(13, 79, 99, .10);
+    --shadow: 0 14px 40px rgba(49, 46, 129, .10);
 }
 
+
+/* =========================================================
+   Modern Color Theme
+   Deep navy + indigo academic palette
+   ========================================================= */
+
+::selection {
+    background: #C7D2FE;
+    color: #1E1B4B;
+}
 
 /* =========================================================
    Global
@@ -133,12 +143,12 @@ nav a.active:after {
     background:
         radial-gradient(
             circle at 5% 15%,
-            rgba(23, 107, 135, .15),
+            rgba(79, 70, 229, .15),
             transparent 27%
         ),
         radial-gradient(
             circle at 92% 80%,
-            rgba(23, 107, 135, .09),
+            rgba(79, 70, 229, .09),
             transparent 25%
         ),
         linear-gradient(
@@ -179,7 +189,7 @@ nav a.active:after {
     background: var(--primary-light);
 
     box-shadow:
-        0 20px 48px rgba(13, 79, 99, .18);
+        0 20px 48px rgba(49, 46, 129, .18);
 }
 
 .hero-intro .label,
@@ -254,7 +264,7 @@ nav a.active:after {
     background: var(--primary);
 
     box-shadow:
-        0 7px 18px rgba(23, 107, 135, .18);
+        0 7px 18px rgba(79, 70, 229, .18);
 }
 
 .btn:hover {
@@ -275,7 +285,7 @@ nav a.active:after {
 .metrics-panel {
     padding: 26px;
 
-    border: 1px solid #C9DDE2;
+    border: 1px solid #CBD5E1;
     border-top: 4px solid var(--primary);
 
     border-radius: 14px;
@@ -342,7 +352,7 @@ nav a.active:after {
 .social-btn {
     padding: 9px 7px;
 
-    border: 1px solid #CFE1E5;
+    border: 1px solid #D8DEEA;
     border-radius: 7px;
 
     background: #fff;
@@ -360,7 +370,7 @@ nav a.active:after {
     color: var(--primary-dark);
     background: var(--primary-light);
 
-    border-color: #AFCFD7;
+    border-color: #A5B4FC;
 
     transform: translateY(-1px);
 }
@@ -444,7 +454,7 @@ nav a.active:after {
     background: #fff;
 
     box-shadow:
-        0 5px 18px rgba(13, 79, 99, .04);
+        0 5px 18px rgba(49, 46, 129, .04);
 
     transition: .25s;
 }
@@ -468,10 +478,10 @@ nav a.active:after {
 .compact-research .card:hover {
     transform: translateY(-5px);
 
-    border-color: #BBD7DE;
+    border-color: #C7D2FE;
 
     box-shadow:
-        0 16px 30px rgba(13, 79, 99, .10);
+        0 16px 30px rgba(49, 46, 129, .10);
 }
 
 .compact-research .card:hover:before {
@@ -566,7 +576,7 @@ nav a.active:after {
     background: var(--primary-soft);
 
     box-shadow:
-        0 6px 18px rgba(13, 79, 99, .10);
+        0 6px 18px rgba(49, 46, 129, .10);
 
     transition: .25s ease;
 }
@@ -575,7 +585,7 @@ nav a.active:after {
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 25px rgba(13, 79, 99, .14);
+        0 12px 25px rgba(49, 46, 129, .14);
 }
 
 .featured-content {
@@ -650,7 +660,7 @@ nav a.active:after {
     background: #fff;
 
     box-shadow:
-        0 7px 22px rgba(13, 79, 99, .045);
+        0 7px 22px rgba(49, 46, 129, .045);
 }
 
 .bottom-column .compact-section-heading {
@@ -683,7 +693,7 @@ nav a.active:after {
 .about-tags span {
     padding: 6px 11px;
 
-    border: 1px solid #CFE1E5;
+    border: 1px solid #D8DEEA;
     border-radius: 20px;
 
     background: var(--primary-light);
@@ -732,7 +742,7 @@ nav a.active:after {
     overflow-y: auto;
     padding-right: 10px;
     scrollbar-width: thin;
-    scrollbar-color: #B7D4DB var(--primary-soft);
+    scrollbar-color: #C7D2FE var(--primary-soft);
 }
 
 #updates::-webkit-scrollbar {
@@ -745,7 +755,7 @@ nav a.active:after {
 }
 
 #updates::-webkit-scrollbar-thumb {
-    background: #B7D4DB;
+    background: #C7D2FE;
     border-radius: 10px;
 }
 
@@ -851,10 +861,10 @@ nav a.active:after {
 .education-card:hover {
     transform: translateY(-4px);
 
-    border-color: #BBD7DE;
+    border-color: #C7D2FE;
 
     box-shadow:
-        0 12px 28px rgba(13, 79, 99, .08);
+        0 12px 28px rgba(49, 46, 129, .08);
 }
 
 
@@ -994,7 +1004,7 @@ nav a.active:after {
 .timeline {
     padding-left: 31px;
 
-    border-left: 2px solid #C9DDE2;
+    border-left: 2px solid #CBD5E1;
 }
 
 .item {
@@ -1106,7 +1116,7 @@ nav a.active:after {
     background: var(--primary-soft);
 
     box-shadow:
-        0 6px 18px rgba(13, 79, 99, .10);
+        0 6px 18px rgba(49, 46, 129, .10);
 
     transition: .25s ease;
 }
@@ -1115,7 +1125,7 @@ nav a.active:after {
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 25px rgba(13, 79, 99, .14);
+        0 12px 25px rgba(49, 46, 129, .14);
 }
 
 .publication-cover-empty {
@@ -1205,7 +1215,7 @@ nav a.active:after {
 }
 
 .contact .section-label {
-    color: #CDECF2;
+    color: #DDD6FE;
 }
 
 .contact h2 {
@@ -1219,7 +1229,7 @@ nav a.active:after {
 .contact p {
     max-width: 700px;
 
-    color: #DCEEF2;
+    color: #E0E7FF;
 
     font-size: 14px;
 
@@ -1249,9 +1259,9 @@ nav a.active:after {
    ========================================================= */
 
 footer {
-    color: #B9D7DE;
+    color: #C7D2FE;
 
-    background: #0B4354;
+    background: #1E1B4B;
 }
 
 .footer {
@@ -1553,7 +1563,7 @@ footer {
     border: 1px solid var(--line);
     border-radius: 8px;
     background: var(--primary-soft);
-    box-shadow: 0 7px 20px rgba(13, 79, 99, .08);
+    box-shadow: 0 7px 20px rgba(49, 46, 129, .08);
 }
 
 .research-image {
@@ -1644,7 +1654,7 @@ footer {
 }
 
 .experience-list {
-    border-left: 2px solid #C9DDE2;
+    border-left: 2px solid #CBD5E1;
     padding-left: 30px;
 }
 
@@ -1749,14 +1759,14 @@ footer {
     border: 1px solid var(--line);
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 5px 18px rgba(13, 79, 99, .04);
+    box-shadow: 0 5px 18px rgba(49, 46, 129, .04);
     transition: .25s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-3px);
-    border-color: #BBD7DE;
-    box-shadow: 0 12px 25px rgba(13, 79, 99, .08);
+    border-color: #C7D2FE;
+    box-shadow: 0 12px 25px rgba(49, 46, 129, .08);
 }
 
 .skill-card p {
@@ -1904,7 +1914,7 @@ footer {
     display:inline-block;
     margin-top:9px;
     padding:4px 8px;
-    border:1px solid #CFE1E5;
+    border:1px solid #D8DEEA;
     border-radius:5px;
     background:var(--primary-light);
     color:var(--primary-dark);
