@@ -1,27 +1,28 @@
 :root {
-    --primary: #118AB2;
-    --primary-dark: #073B4C;
-    --primary-light: #BEE7F2;
-    --primary-soft: #EAF7FB;
+    --primary: #1B3B6F;
+    --primary-dark: #0B1F3A;
+    --primary-light: #D7E3F5;
+    --primary-soft: #F3F6FC;
 
-    --accent: #06D6A0;
-    --accent-warm: #FFD166;
-    --accent-pink: #EF476F;
+    --accent: #2FB8C4;
+    --accent-gold: #C9A227;
 
-    --text: #0B2939;
-    --muted: #547080;
-    --line: #D3E9F0;
+    --text: #16243A;
+    --muted: #5D6B80;
+    --line: #DCE4F0;
 
     --white: #fff;
-    --bg: #EAF7FB;
+    --bg: #F3F6FC;
 
-    --shadow: 0 14px 40px rgba(17, 138, 178, .16);
+    --shadow: 0 14px 40px rgba(27, 59, 111, .14);
 }
 
 
 /* =========================================================
    Modern Color Theme
-   Lively teal-blue academic palette (118AB2)
+   Photonics-inspired academic palette — deep indigo-navy
+   (scholarly, chip-and-optics tone) with a spectral-cyan
+   accent nodding to wavelength/WDM research
    ========================================================= */
 
 ::selection {
@@ -147,12 +148,12 @@ nav a.active:after {
     background:
         radial-gradient(
             circle at 5% 15%,
-            rgba(17, 138, 178, .15),
+            rgba(27, 59, 111, .15),
             transparent 27%
         ),
         radial-gradient(
             circle at 92% 80%,
-            rgba(17, 138, 178, .09),
+            rgba(27, 59, 111, .09),
             transparent 25%
         ),
         linear-gradient(
@@ -193,7 +194,7 @@ nav a.active:after {
     background: var(--primary-light);
 
     box-shadow:
-        0 20px 48px rgba(17, 138, 178, .18);
+        0 20px 48px rgba(27, 59, 111, .18);
 }
 
 .hero-intro .label,
@@ -268,7 +269,7 @@ nav a.active:after {
     background: var(--primary);
 
     box-shadow:
-        0 7px 18px rgba(17, 138, 178, .18);
+        0 7px 18px rgba(27, 59, 111, .18);
 }
 
 .btn:hover {
@@ -458,7 +459,7 @@ nav a.active:after {
     background: #fff;
 
     box-shadow:
-        0 5px 18px rgba(17, 138, 178, .04);
+        0 5px 18px rgba(27, 59, 111, .04);
 
     transition: .25s;
 }
@@ -485,7 +486,7 @@ nav a.active:after {
     border-color: var(--primary-light);
 
     box-shadow:
-        0 16px 30px rgba(17, 138, 178, .10);
+        0 16px 30px rgba(27, 59, 111, .10);
 }
 
 .compact-research .card:hover:before {
@@ -580,7 +581,7 @@ nav a.active:after {
     background: var(--primary-soft);
 
     box-shadow:
-        0 6px 18px rgba(17, 138, 178, .10);
+        0 6px 18px rgba(27, 59, 111, .10);
 
     transition: .25s ease;
 }
@@ -589,7 +590,7 @@ nav a.active:after {
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 25px rgba(17, 138, 178, .14);
+        0 12px 25px rgba(27, 59, 111, .14);
 }
 
 .featured-content {
@@ -664,7 +665,7 @@ nav a.active:after {
     background: #fff;
 
     box-shadow:
-        0 7px 22px rgba(17, 138, 178, .045);
+        0 7px 22px rgba(27, 59, 111, .045);
 }
 
 .bottom-column .compact-section-heading {
@@ -868,7 +869,7 @@ nav a.active:after {
     border-color: var(--primary-light);
 
     box-shadow:
-        0 12px 28px rgba(17, 138, 178, .08);
+        0 12px 28px rgba(27, 59, 111, .08);
 }
 
 
@@ -1120,7 +1121,7 @@ nav a.active:after {
     background: var(--primary-soft);
 
     box-shadow:
-        0 6px 18px rgba(17, 138, 178, .10);
+        0 6px 18px rgba(27, 59, 111, .10);
 
     transition: .25s ease;
 }
@@ -1129,7 +1130,7 @@ nav a.active:after {
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 25px rgba(17, 138, 178, .14);
+        0 12px 25px rgba(27, 59, 111, .14);
 }
 
 .publication-cover-empty {
@@ -1219,7 +1220,7 @@ nav a.active:after {
 }
 
 .contact .section-label {
-    color: #CFF4E7;
+    color: #CFEFF5;
 }
 
 .contact h2 {
@@ -1233,7 +1234,7 @@ nav a.active:after {
 .contact p {
     max-width: 700px;
 
-    color: #E3F7FB;
+    color: #E6ECFB;
 
     font-size: 14px;
 
@@ -1567,7 +1568,7 @@ footer {
     border: 1px solid var(--line);
     border-radius: 8px;
     background: var(--primary-soft);
-    box-shadow: 0 7px 20px rgba(17, 138, 178, .08);
+    box-shadow: 0 7px 20px rgba(27, 59, 111, .08);
 }
 
 .research-image {
@@ -1763,14 +1764,14 @@ footer {
     border: 1px solid var(--line);
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 5px 18px rgba(17, 138, 178, .04);
+    box-shadow: 0 5px 18px rgba(27, 59, 111, .04);
     transition: .25s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-3px);
     border-color: var(--primary-light);
-    box-shadow: 0 12px 25px rgba(17, 138, 178, .08);
+    box-shadow: 0 12px 25px rgba(27, 59, 111, .08);
 }
 
 .skill-card p {
@@ -1981,7 +1982,7 @@ footer {
 
 /* =========================================================
    LIVELY & INTERACTIVE ENHANCEMENTS
-   Vibrant teal-blue theme (118AB2) — motion, glow & micro-interactions
+   Deep indigo-navy academic theme with spectral-cyan accent — motion, glow & micro-interactions
    ========================================================= */
 
 @keyframes heroGradientShift {
@@ -1990,8 +1991,8 @@ footer {
 }
 
 @keyframes softPulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(6, 214, 160, .45); }
-    50%      { box-shadow: 0 0 0 9px rgba(6, 214, 160, 0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(47, 184, 196, .45); }
+    50%      { box-shadow: 0 0 0 9px rgba(47, 184, 196, 0); }
 }
 
 @keyframes floatIn {
@@ -2000,8 +2001,8 @@ footer {
 }
 
 @keyframes dotPing {
-    0%   { box-shadow: 0 0 0 0 rgba(17, 138, 178, .45); }
-    100% { box-shadow: 0 0 0 10px rgba(17, 138, 178, 0); }
+    0%   { box-shadow: 0 0 0 0 rgba(27, 59, 111, .45); }
+    100% { box-shadow: 0 0 0 10px rgba(27, 59, 111, 0); }
 }
 
 :focus-visible {
@@ -2062,7 +2063,7 @@ nav a:after {
 .btn:hover {
     transform: translateY(-3px) scale(1.035);
     border-color: var(--accent);
-    box-shadow: 0 12px 26px rgba(17, 138, 178, .22);
+    box-shadow: 0 12px 26px rgba(27, 59, 111, .22);
 }
 
 .btn:active {
@@ -2075,7 +2076,7 @@ nav a:after {
 
 .btn.primary:hover {
     background: linear-gradient(120deg, var(--accent), var(--primary));
-    box-shadow: 0 14px 30px rgba(6, 214, 160, .3);
+    box-shadow: 0 14px 30px rgba(47, 184, 196, .3);
 }
 
 .btn::before {
@@ -2119,7 +2120,7 @@ nav a:after {
 .education-card:hover,
 .bottom-column:hover {
     transform: translateY(-8px) scale(1.015);
-    box-shadow: 0 20px 40px rgba(17, 138, 178, .2);
+    box-shadow: 0 20px 40px rgba(27, 59, 111, .2);
     border-color: var(--accent);
 }
 
@@ -2130,7 +2131,7 @@ nav a:after {
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 36px rgba(17, 138, 178, .2);
+    box-shadow: 0 18px 36px rgba(27, 59, 111, .2);
 }
 
 /* ---------- Metrics + socials ---------- */
@@ -2140,7 +2141,7 @@ nav a:after {
 }
 
 .metrics-panel:hover {
-    box-shadow: 0 20px 46px rgba(17, 138, 178, .2);
+    box-shadow: 0 20px 46px rgba(27, 59, 111, .2);
 }
 
 .metric {
@@ -2168,7 +2169,7 @@ nav a:after {
     color: #fff;
     border-color: var(--accent);
     transform: translateY(-3px) scale(1.04);
-    box-shadow: 0 10px 20px rgba(6, 214, 160, .3);
+    box-shadow: 0 10px 20px rgba(47, 184, 196, .3);
 }
 
 /* ---------- Images: playful tilt + zoom ---------- */
@@ -2189,7 +2190,7 @@ nav a:after {
 .featured-cover:hover,
 .publication-cover:hover {
     transform: translateY(-5px) rotate(-1deg) scale(1.04);
-    box-shadow: 0 16px 32px rgba(17, 138, 178, .28);
+    box-shadow: 0 16px 32px rgba(27, 59, 111, .28);
 }
 
 /* ---------- Timeline / profile dots: gentle ping ---------- */
@@ -2259,7 +2260,7 @@ nav a:after {
 
 #profile-contact-links a:hover,
 .contact-links a:hover {
-    background: rgba(6, 214, 160, .28);
+    background: rgba(47, 184, 196, .28);
     border-color: var(--accent);
     transform: translateY(-2px);
 }
